@@ -1,17 +1,15 @@
-def check_fast_lane(minutes_left, items, teacher_pass)
+def check_fast_lane(minutes_left, items, teacher_pass):
     if teacher_pass:
-        return "Fast lane approved
+        return "Fast lane approved"
     if minutes_left < 10 and items <= 3:
         return "Fast lane approved"
     else:
-    
         return "Use regular line"
 
 def main():
     print("=== Cafeteria Fast Lane Assistant ===")
     print()
 
-    
     try:
         minutes_left = int(input("Enter minutes left before class starts: "))
         items = int(input("Enter number of items to purchase: "))
